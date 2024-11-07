@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0040bdd-b6c3-4333-8116-4086ba2a263f" name="Changes" comment="Mock twitter tweets stream">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/event-driven.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/TwitterToKafkaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/config/TwitterToKafkaConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/MockRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/StreamRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/Tweet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/TwitterStatusListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/test/java/cc/elefteria/twitter_to_kafka/TwitterToKafkaApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2oLmKojpAye7wR7ArKSFmxmKDRH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.twitter-to-kafka [clean].executor": "Run",
+    "Maven.twitter-to-kafka [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.TwitterToKafkaApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/leroy/IdeaProjects/avro-test/avro-test-producer/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.TwitterToKafkaApplication">
+    <configuration name="AvroTestProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="avro-test-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.elefteria.avro_test_producer.AvroTestProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwitterToKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="twitter-to-kafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.elefteria.twitter_to_kafka.TwitterToKafkaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cc.elefteria.twitter_to_kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TwitterToKafkaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0040bdd-b6c3-4333-8116-4086ba2a263f" name="Changes" comment="" />
+      <created>1730657169099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730657169099</updated>
+      <workItem from="1730657169977" duration="592000" />
+      <workItem from="1730658161673" duration="11910000" />
+      <workItem from="1731009990604" duration="37000" />
+      <workItem from="1731010252600" duration="54000" />
+      <workItem from="1731010365712" duration="49000" />
+      <workItem from="1731010452111" duration="113000" />
+      <workItem from="1731010573455" duration="79000" />
+    </task>
+    <task id="LOCAL-00001" summary="init twitter to kafka">
+      <option name="closed" value="true" />
+      <created>1730659705262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730659705262</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init twitter to kafka">
+      <option name="closed" value="true" />
+      <created>1730659927300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730659927300</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init twitter to kafka">
+      <option name="closed" value="true" />
+      <created>1730659952049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730659952049</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init twitter to kafka">
+      <option name="closed" value="true" />
+      <created>1730659998476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730659998476</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init twitter to kafka">
+      <option name="closed" value="true" />
+      <created>1730660023543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730660023543</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Mock twitter tweets stream">
+      <option name="closed" value="true" />
+      <created>1730745176317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730745176317</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Mock twitter tweets stream">
+      <option name="closed" value="true" />
+      <created>1730747043883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730747043883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init twitter to kafka" />
+    <MESSAGE value="Mock twitter tweets stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mock twitter tweets stream" />
+  </component>
+</project>

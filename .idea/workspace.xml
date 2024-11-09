@@ -5,30 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0040bdd-b6c3-4333-8116-4086ba2a263f" name="Changes" comment="Mock twitter tweets stream">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/event-driven.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/TwitterToKafkaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/config/TwitterToKafkaConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/MockRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/StreamRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/Tweet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/TwitterStatusListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/java/cc/elefteria/twitter_to_kafka/twitter/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-to-kafka/src/test/java/cc/elefteria/twitter_to_kafka/TwitterToKafkaApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/java/cc/elefteria/avro_test_producer/ProducerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/java/cc/elefteria/avro_test_producer/producer/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/java/cc/elefteria/avro_test_producer/producer/UsersProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro-test-producer/src/main/resources/avro/User.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-avro-streams/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro-test-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/avro-test-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro-test-producer/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +28,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -57,6 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.avro-test-producer [generate-resources].executor": "Run",
     "Maven.twitter-to-kafka [clean].executor": "Run",
     "Maven.twitter-to-kafka [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -64,25 +62,53 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AvroTestProducerApplication.executor": "Run",
     "Spring Boot.TwitterToKafkaApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/leroy/IdeaProjects/avro-test/avro-test-producer/pom.xml",
+    "last_opened_file_path": "/home/leroy/IdeaProjects/avro-test/avro-test-producer/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "bigdataide_conn_settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.TwitterToKafkaApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/avro-test-producer/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/avro-test-producer/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AvroTestProducerApplication">
     <configuration name="AvroTestProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="avro-test-producer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cc.elefteria.avro_test_producer.AvroTestProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAvroStreamsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="test-avro-streams" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.elefteria.test_avro_streams.TestAvroStreamsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +155,9 @@
       <workItem from="1731010365712" duration="49000" />
       <workItem from="1731010452111" duration="113000" />
       <workItem from="1731010573455" duration="79000" />
+      <workItem from="1731011060412" duration="277000" />
+      <workItem from="1731161083292" duration="359000" />
+      <workItem from="1731161498650" duration="15058000" />
     </task>
     <task id="LOCAL-00001" summary="init twitter to kafka">
       <option name="closed" value="true" />
@@ -191,6 +220,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init twitter to kafka" />

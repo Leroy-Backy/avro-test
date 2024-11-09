@@ -28,7 +28,16 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<avro.version>1.12.0</avro.version>
+		<kafka-avro-serializer.version>7.7.1</kafka-avro-serializer.version>
 	</properties>
+	<repositories>
+		<repository>
+			<id>confluent</id>
+			<url>https://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,6 +46,32 @@
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<!-- Avro Serialization -->
+		<dependency>
+			<groupId>io.confluent</groupId>
+			<artifactId>kafka-avro-serializer</artifactId>
+			<version>${kafka-avro-serializer.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.confluent</groupId>
+			<artifactId>kafka-schema-registry-client</artifactId>
+			<version>${kafka-avro-serializer.version}</version>
+		</dependency>
+
+		<!-- Avro Maven Plugin (for schema generation) -->
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro-maven-plugin</artifactId>
+			<version>${avro.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>${avro.version}</version>
 		</dependency>
 
 		<dependency>
@@ -58,6 +93,27 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro-maven-plugin</artifactId>
+				<version>${avro.version}</version>
+<!--				<configuration>-->
+<!--					<stringType>String</stringType>-->
+<!--				</configuration>-->
+				<executions>
+					<execution>
+						<id>schemas</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>schema</goal>
+						</goals>
+						<configuration>
+							<sourceDirectory>src/main/resources/avro/</sourceDirectory>
+							<outputDirectory>src/main/java/</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

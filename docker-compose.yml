@@ -34,7 +34,7 @@ services:
       - streams-kafka
       - zookeeper
     environment:
-      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: PLAINTEXT://streams-kafka:9092
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
     ports:
@@ -55,7 +55,7 @@ services:
     environment:
       CONTROL_CENTER_BOOTSTRAP_SERVERS: streams-kafka:9092
       CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:2181
-      CONTROL_CENTER_SCHEMA_REGISTRY_URL: http://schemaregistry:8081
+      CONTROL_CENTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
       CONTROL_CENTER_REPLICATION_FACTOR: 1
       CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS: 1
       CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
@@ -65,6 +65,35 @@ services:
       - streams-network  
      
 #todo add my services
+  avro-test-producer:
+    build: 
+      context: ./avro-test-producer
+    image: leroy/avro-test-producer:latest
+    ports:
+      - "8010:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - streams-network  
+    depends_on:
+      - zookeeper
+      - streams-kafka
+      - schema-registry
+  
+  test-avro-streams:
+    build: 
+      context: ./test-avro-streams
+    image: leroy/test-avro-streams:latest
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - streams-network
+    depends_on:
+      - zookeeper
+      - streams-kafka
+      - schema-registry
      
 networks:
   streams-network:

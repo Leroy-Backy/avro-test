@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0040bdd-b6c3-4333-8116-4086ba2a263f" name="Changes" comment="Mock twitter tweets stream">
-      <change afterPath="$PROJECT_DIR$/test-avro-streams/src/main/java/cc/elefteria/test_avro_streams/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-avro-streams/src/main/java/cc/elefteria/test_avro_streams/streams/UserStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-avro-streams/src/main/resources/application-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-avro-streams/src/main/resources/avro/User.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro-test-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/avro-test-producer/pom.xml" afterDir="false" />
+    <list default="true" id="a0040bdd-b6c3-4333-8116-4086ba2a263f" name="Changes" comment="Stream that uses avro">
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-avro-streams/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-avro-streams/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-avro-streams/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test-avro-streams/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +55,7 @@
     "Spring Boot.TwitterToKafkaApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/leroy/IdeaProjects/avro-test/avro-test-producer/src/main/resources",
+    "last_opened_file_path": "/home/leroy/IdeaProjects/avro-test/test-avro-streams",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +71,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test-avro-streams" />
       <recent name="$PROJECT_DIR$/avro-test-producer/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -139,7 +132,7 @@
       <workItem from="1731161498650" duration="15058000" />
       <workItem from="1731184250782" duration="994000" />
       <workItem from="1731186617333" duration="1647000" />
-      <workItem from="1731246918989" duration="1360000" />
+      <workItem from="1731246918989" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="init twitter to kafka">
       <option name="closed" value="true" />
@@ -197,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730747043883</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Stream that uses avro">
+      <option name="closed" value="true" />
+      <created>1731248451856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731248451856</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init twitter to kafka" />
     <MESSAGE value="Mock twitter tweets stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mock twitter tweets stream" />
+    <MESSAGE value="Stream that uses avro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stream that uses avro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,3 +1,14 @@
 spring:
   application:
     name: test-avro-streams
+  kafka:
+    bootstrap-servers: localhost:9094
+    properties:
+      schema.registry.url: http://localhost:8081  
+    streams:
+      application-id: test-avro-stream
+      default:
+        key:
+          serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        value:
+          serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
